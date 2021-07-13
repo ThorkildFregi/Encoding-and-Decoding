@@ -1,0 +1,17 @@
+</body><!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <link rel="stylesheet" type="text/css" href="static/accueil.css" />
+</head>
+<body>
+    <h2>Encodage et décodage</h2><br>
+    <p>Bonjour et bienvenue dans "Encodage et décodage".</p><br>
+    <form action="{{ url_for('traitement') }}" method="post">
+        <input class="form_control" name="message" id="message" placeholder="Message à encoder ou décoder"><br>
+        <input class="form_control" name="key" id="key" placeholder="Rentré votre clé (1-71)"><br>
+        <input type="submit" value="Traiter">
+    </form>
+</body>
+</html>
